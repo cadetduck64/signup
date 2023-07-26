@@ -1,0 +1,56 @@
+:root {
+    --backcolor: (blue);
+}
+
+#pagecontainer {
+    display: flex;
+    flex-direction: row;
+    border: solid red;
+    height: auto;
+}
+
+#formcontainer {
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    width: fill
+}
+
+#image {
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    height: 600px;
+    border: solid blue;
+    margin: 0%;
+}
+
+#picture {
+    width: 100%;
+    height: auto;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    border: black solid;
+    flex-wrap: wrap;
+}
+
+#infoboxes {
+    border: solid black;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.information { 
+
+}
+
+.info {
+    margin: 10px;
+}
