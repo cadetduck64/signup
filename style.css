@@ -1,44 +1,83 @@
 :root {
     --backcolor: (blue);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    display: flex;
+    height: 100%;
 }
 
 #pagecontainer {
     display: flex;
     flex-direction: row;
-    border: solid red;
-    height: auto;
+    /* border: solid red; */
+    height: 100%;
 }
 
 #formcontainer {
-    border: black solid;
+    /* border: black solid; */
     display: flex;
     flex-direction: column;
-    width: fill
+    width: 100%;
 }
 
 #image {
     display: flex;
-    justify-content: flex-end;
-    width: 400px;
-    height: 600px;
-    border: solid blue;
+    justify-content: center;
+    width: 500px;
+    height: fill;
+    /* border: solid blue; */
     margin: 0%;
+    background-color: black;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8%;
 }
 
-#picture {
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+#odin {
+    font-family: 'Norse-Bold';
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    /* border: solid purple; */
     width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#odinbanner {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    /* background-color: rgb(82, 82, 82); */
+    opacity: 0.7;
+}
+
+#odinpicture {
+    width: 120px;
+    height: 150px;
 }
 
 #signup {
     display: flex;
     flex-direction: column;
-    border: black solid;
+    /* border: black solid; */
     flex-wrap: wrap;
+    border-bottom: solid rgb(75, 75, 75);
+    border-style: groove;
 }
 
 #infoboxes {
-    border: solid black;
+    /* border: solid black; */
     height: 200px;
     width: 600px;
     display: flex;
@@ -47,10 +86,66 @@
     flex-wrap: wrap;
 }
 
-.information { 
+#para {
+    background-color:  rgb(194, 186, 186);
+    margin: 0%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 20%;
+}
 
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3%;
+    height: 100%;
+    padding-top: 2%;
+    background-color:rgb(194, 186, 186)
+}
+
+#createaccount {
+    width: 200px;
+    height: 40px;
+    border-radius: 5%;
+    border: none;
+    color: white;
+    background-color: #596D48;
+    box-shadow: 2px 2px 2px rgb(109, 109, 109);
+}
+
+#login {
+    color: #596D48;
+}
+
+#call {
+
+padding: 1%;
+}
+
+input{
+    border-radius: 5%;
+}
+
+input:focus-visible{
+    border: solid blue;
+
+}
+
+input:invalid {
+    border: solid red;
+} 
+
+.information { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 12px;
 }
 
 .info {
+    border: solid #E5E7EB;
     margin: 10px;
 }
+

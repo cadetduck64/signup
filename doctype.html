@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
 <div id="pagecontainer">
 
     <div id="image">
-        <img id="picture" src="halie-west-25xggax4bSA-unsplash.jpg">
+        <div id="odinbanner">
+            <div id="odin"><img id="odinpicture" src="odin-lined.png" alt="">ODIN</div>
+        </div>
     </div>
 
     <div id="formcontainer">
-        <p class="para">this is not a real online service! You know you need
+        <p id="para">this is not a real online service! You know you need
             something like this in your life to help you realize your
-            deepest dreams. sign up <i>now<i> to get started.
+            deepest dreams. sign up <i>now</i> to get started.
                 <br>
                 <br>
             you <i>know</i> you want to
         </p>
 
         <div id="signup">
-            <div class="call">lets do this</div>
+            <div id="call">lets do this!</div>
 
+        <form>
             <div id="infoboxes">
                 <div class="information">
                     <div><label for="first Name">FIRST NAME</label></div>
@@ -49,20 +53,23 @@
                 </div>
 
                 <div class="information">
-                    <div><label for="password">PASSWORD</label></div><input class="info" type="password" id="password" name="password">
+                    <div><label for="password">PASSWORD</label></div>
+                    <input class="info" type="password" id="password" name="password" required>
                 </div>
                 
                 <div class="information">
                     <div><label for="passworkconfirm">CONFIRM PASSWORD</label></div>
-                    <input class="info" type="password" id="passwordconfirm" name="passwordconfirm">
+                    <input class="info" type="password" id="passwordconfirm" name="passwordconfirm" required>
                 </div>
             </div>
+            
         </div>
 
         <div id="footer">
             <button id="createaccount">CREATE ACCOUNT</button>
-            <p>Already have an account? Log in</p>
+            <div><p>Already have an account? <span id="login">Log in</span></p></div>
         </div>
+    </form>
     </div>
 
 </div>
